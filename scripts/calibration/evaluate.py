@@ -22,7 +22,5 @@ files = ('probs_resnet110_c10_logits.p', 'probs_resnet110_c100_logits.p',
          'probs_resnet110_SD_c100_logits.p', 'probs_resnet152_SD_SVHN_logits.p',
         'probs_resnet152_imgnet_logits.p', 'probs_densenet161_imgnet_logits.p'  # ImageNet calibration takes rather long time.
         )
-        
-df_iso = cal_results(IsotonicRegression, PATH, files, {'y_min':0, 'y_max':1}, approach = "single")
 
 df_temp_scale = cal_results(TemperatureScaling, PATH, files, approach = "all")
