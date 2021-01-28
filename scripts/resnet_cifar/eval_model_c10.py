@@ -32,8 +32,8 @@ weight_decay       = 0.0001
 mean = [125.307, 122.95, 113.865]  # Mean (per-pixel mean?) - let it be atm
 std  = [62.9932, 62.0887, 66.7048]
 seed = 333
-weights_file_10 = "../../models/resnet_110_45k_c10.h5"
-weights_file_100 = "../../models/resnet_110_45k_c100.h5"
+weights_file_10 = "/mnt/dsi_vol1/users/frenkel2/data/calibration/trained_models/spline/cifar10/resnet_110_45k_c10.h5"
+weights_file_100 = "/mnt/dsi_vol1/users/frenkel2/data/calibration/trained_models/spline/cifar100/resnet_110_45k_c100.h5"
 
 def scheduler(epoch):
     if epoch < 80:
